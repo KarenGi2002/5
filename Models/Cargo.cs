@@ -6,11 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace vacaciones.Models;
 
 public class Cargo{
-[Key]
-    public Guid cargoId{get;set;}
+ [Key]
+ public Guid CargoId{get;set;} =Guid.NewGuid();
 
-[NotMapped]
-[ForeignKey("Empleado")]
-    public  string? nombre{get;set;}
-    public virtual Empleado? Empleado{get;set;}
+public String? nombre{get;set;}
+   
 }

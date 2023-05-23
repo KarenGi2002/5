@@ -30,9 +30,9 @@ public async Task actualizar (Guid id, Empleado inputEmpleado){
     var empleado= context.Empleado?.Find(id);
 
     if(empleado != null){
-     empleado.nombre=inputEmpleado.nombre;
+     empleado.Nombre=inputEmpleado.Nombre;
      empleado.fechaingreso= inputEmpleado.fechaingreso;
-     empleado.cargoId= inputEmpleado.cargoId;
+     empleado.CargoId= inputEmpleado.CargoId;
      empleado.disponible=inputEmpleado.disponible;
 
      await context.SaveChangesAsync();

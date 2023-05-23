@@ -14,6 +14,6 @@ public int antiguedad{get;set;}
 public int diasOtorgados{get;set;}
 
 [MaxLength(100)]
-public string? vigente{get;set;}
+public Boolean vigente{get;set;}
 
 }

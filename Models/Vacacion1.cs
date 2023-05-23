@@ -8,11 +8,7 @@ public class Vacacion1{
 [Key]
 public Guid VacacionesId{get;set;}
 
-public string? fecha{get;set;}
+public String? fecha{get;set;}
 
-[NotMapped]
-[ForeignKey ("Empleado")]
-public Guid EmpleadoId{get;set;}
-
-public virtual Empleado? Empleado{get;set;}
 }
+

@@ -14,7 +14,7 @@ public CargoService(vacacionesContext dbContext){
     //ASYNC AWAIT
 
     public async Task insertar(Cargo inputCargo){
-        inputCargo.cargoId=Guid.NewGuid();
+        inputCargo.CargoId=Guid.NewGuid();
         await context.AddAsync(inputCargo);
         await context.SaveChangesAsync();
     }
